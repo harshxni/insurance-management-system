@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5ff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Headings */
+
+h1 {
+    color: #1a237e;
+    font-size: 35px;
+}
+
+h2 {
+    color: #333;
+}
+
+
+/* Forms */
+
+form {
+    background: white;
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px gray;
+}
+
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #006f98;
+}
+/* Dashboard buttons */
+
+div {
+    margin-top: 30px;
+}
+
+
+/* Tables */
+
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 5px 15px gray;
+}
+
+
+th {
+    background: #1a237e;
+    color: white;
+    padding: 15px;
+}
+
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Back buttons */
+
+a button {
+    background: #00897b;
+}
+
+
+a button:hover {
+    background: #00695c;
+}
+
+
+/* Text area */
+
+textarea {
+    height: 100px;
+}
+
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #006f98;
+}
