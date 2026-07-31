@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Premium Payment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Pay Premium</h1>
+
+<form action="/payment" method="POST">
+
+<label>Policy Name</label><br>
+<input type="text" name="policy_name" required>
+<br><br>
+
+<label>Premium Amount</label><br>
+<input type="number" name="amount" required>
+<br><br>
+
+<button type="submit">Pay Now</button>
+
+</form>
+
+</body>
+
+</html>

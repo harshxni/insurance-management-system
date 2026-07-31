@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Claim Status</title>
+</head>
+
+<body>
+
+<h1>My Claims</h1>
+
+<table border="1">
+
+<tr>
+    <th>Policy Name</th>
+    <th>Reason</th>
+    <th>Status</th>
+</tr>
+
+{% for claim in claims %}
+
+<tr>
+    <td>{{ claim[2] }}</td>
+    <td>{{ claim[3] }}</td>
+    <td>{{ claim[4] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+</body>
+
+</html>

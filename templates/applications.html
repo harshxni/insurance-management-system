@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Applications</title>
+</head>
+
+<body>
+
+<h1>My Insurance Applications</h1>
+
+<table border="1">
+
+<tr>
+    <th>Policy Name</th>
+    <th>Status</th>
+</tr>
+
+
+{% for application in applications %}
+
+<tr>
+
+<td>{{ application[2] }}</td>
+
+<td>{{ application[3] }}</td>
+
+</tr>
+
+{% endfor %}
+
+
+</table>
+
+<br>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+</body>
+</html>

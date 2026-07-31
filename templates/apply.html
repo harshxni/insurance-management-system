@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Policy</title>
+</head>
+
+<body>
+
+<h1>Apply for Insurance Policy</h1>
+
+<table border="1">
+
+<tr>
+    <th>Policy Name</th>
+    <th>Type</th>
+    <th>Premium</th>
+    <th>Duration</th>
+    <th>Action</th>
+</tr>
+
+{% for policy in policies %}
+
+<tr>
+
+<td>{{ policy[1] }}</td>
+<td>{{ policy[3] }}</td>
+<td>{{ policy[2] }}</td>
+<td>{{ policy[4] }}</td>
+
+<td>
+    <form action="/apply_policy" method="POST">
+
+        <input type="hidden" name="policy_name" value="{{ policy[1] }}">
+
+        <button type="submit">Apply</button>
+
+    </form>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>

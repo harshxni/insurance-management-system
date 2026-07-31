@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Policies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Available Insurance Policies</h1>
+
+<table border="1">
+
+<tr>
+    <th>Policy Name</th>
+    <th>Type</th>
+    <th>Premium</th>
+    <th>Duration</th>
+</tr>
+
+{% for policy in policies %}
+
+<tr>
+    <td>{{ policy[1] }}</td>
+    <td>{{ policy[2] }}</td>
+    <td>{{ policy[3] }}</td>
+    <td>{{ policy[4] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+</body>
+</html>
